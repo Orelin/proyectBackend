@@ -6,7 +6,7 @@ class ProductManager {
     }
 
     addProduct (title, description, price, thumbnail, code, stock){
-        if (!title || !description || !price || !thumbnail || !code || !stock) return
+        if (!title || !description || !price || !thumbnail || !code || !stock) return console.error(`Todos los campos son necesarios`)
 
         for (let i = 0; i < this.products.length; i++) {
             if (this.products[i].code === code) return console.error(`Codigo ${code} repetido`)}
