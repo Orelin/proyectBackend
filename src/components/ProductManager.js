@@ -31,7 +31,7 @@ class ProductManager {
 
     async getProducts() {
         let readProducts = await fs.readFile(this.path, 'utf-8');
-        return JSON.parse(readProducts) && console.log(JSON.parse(readProducts));
+        return JSON.parse(readProducts);
     }
 
     async getProductsById(id) {
@@ -73,3 +73,5 @@ class ProductManager {
         await fs.writeFile(this.path, JSON.stringify(deleted));
     }
 }
+
+export default ProductManager
