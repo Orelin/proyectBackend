@@ -1,5 +1,5 @@
 import express from "express";
-import ProductManager from "./components/ProductManager.js";
+import ProductManager from "./controllers/ProductManager.js";
 
 const product = new ProductManager
 /*//! Crear productos

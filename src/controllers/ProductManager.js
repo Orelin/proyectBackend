@@ -3,7 +3,7 @@ import { promises as fs } from 'fs';
 class ProductManager {
     constructor() {
         this.products = [];
-        this.path = './products.txt';
+        this.path = './src/models/products.txt';
         this.id = 0;
     }
 
